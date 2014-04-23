@@ -293,7 +293,7 @@ class _JavascriptFileIter(_FileIter):
         could cause trouble.
         """
         try:
-            return s.translate(cls.TRANSLATION_TABLE)
+            return s.translate(unicode(cls.TRANSLATION_TABLE))
         except:
             return cls.TRANSLATION_TABLE
 
